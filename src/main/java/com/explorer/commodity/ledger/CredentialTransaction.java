@@ -34,7 +34,7 @@ public class CredentialTransaction implements ContractInterface {
 	}
 
 	@Transaction
-	public CommitedCommodity[] getCredentials(Context context, String commodityName) throws UnsupportedEncodingException {
+	public CommitedCommodity[] getCommodities(Context context, String commodityName) throws UnsupportedEncodingException {
 		List<CommitedCommodity> commodities = new ArrayList<CommitedCommodity>();
 		QueryResultsIterator<KeyModification> resultSet = context.getStub().getHistoryForKey(commodityName);
 		resultSet.forEach(result -> {
