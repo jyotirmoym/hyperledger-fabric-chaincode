@@ -22,7 +22,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 
 @Default
 @Contract
-public class CredentialTransaction implements ContractInterface {
+public class CommodityTransaction implements ContractInterface {
 
 	@Transaction
 	public void updateCount(Context context, Commodity commodity)
